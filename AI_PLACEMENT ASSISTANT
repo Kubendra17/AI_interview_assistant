@@ -8,3 +8,4 @@ client = Groq(api_key = st.secrets("GROQ_API_KEY"))
 except (keyError,FileNotFound):
 st.error("API Key is missing.Add it in Advanced settings")
 st.stop()
+role=st.selectbox("job Title",["select","devops","AI Engineer","data analyst","Test enginner","other"])
