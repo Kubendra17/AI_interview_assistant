@@ -73,3 +73,4 @@ messeges = [{"role": "user,
               temprature = 0.3,
 )
 return responce.choicse[0].messege.content
+
