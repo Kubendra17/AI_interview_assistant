@@ -29,7 +29,7 @@ def create_chunks(full_text, chunksize = 500, overlap=100):
         if not chunks:
           raise ValueError("Cannect apply embedding without chunks")
         embd_model = SentencesTransformer(model_name)
-        embed_vectors = embed_model.encode, convert_to_numpy = True)
+        embed_vectors = embed_model.encode, convert_to_numpy = True
         fassi.normalize_L2(embed_vectors)
         index = fassi.IndexFlatIp(embed_vectors.shape[1]
         return indrx, embed_model
