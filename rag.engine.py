@@ -68,7 +68,7 @@ def ask_rag (question, embed_model, chunks, index, api_key, num_chunks, model_na
 client = Groq(api_key = key)
 response = client .chat.completions.create
 model = model_name,
-messeges = [{"role": "user,
+messeges = [{"role": "user",
              "cotent" : prompt}],
               temprature = 0.3,
 )
