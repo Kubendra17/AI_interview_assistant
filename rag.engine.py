@@ -10,7 +10,7 @@ def load_pdf(pdf_path):
   mypages = [ i.extract_test() or "" for i in reader.pages]
   full_text = "\n".join(mypages).strip()
   if not full_text:
-    raise ValueError("No readable Text Found"
+    raise ValueError("No readable Text Found")
   return full_text
 
 #chunking
